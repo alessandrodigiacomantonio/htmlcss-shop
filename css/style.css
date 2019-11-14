@@ -1,0 +1,23 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+}
+
+#container {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.row {
+  position: relative;
+}
+
+.box {
+  display: inline-block;
+}
