@@ -12,12 +12,50 @@ body {
   width: 90%;
   text-align: center;
   margin: auto;
+  background-color:green;
 }
 
 .row {
-  position: relative;
+  /* position: relative; */
+  margin-bottom: 10px;
+  /* line-height: 300px; */
+  vertical-align: middle;
 }
 
 .box {
+  position: relative;
   display: inline-block;
+  width: 300px;
+  height: 372px;
+  cursor: pointer;
+}
+
+.box > div{
+  position: absolute;
+  background: yellow;
+  top: 0;
+  right: 0;
+}
+
+.box i {
+  /* display: none; */
+  position: relative;
+  background: pink;
+  /* text-align: center; */
+  z-index: 1;
+  /* padding: 3px; */
+  /* bottom: 0; */
+}
+
+.box:hover i {
+  display: block;
+  color: red;
+}
+
+.box:nth-child(2n+1) > div {
+  background-color: green;
+}
+
+.box:nth-child(2) > div {
+  background-color: red;
 }
